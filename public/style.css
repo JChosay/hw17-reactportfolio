@@ -1,0 +1,44 @@
+:root{
+    --dark: #001219;
+    --lightdark1: #005f73;
+    --lightdark2: #0a9396;
+    --heading: #ae2012;
+    --heading2: #bb3e03;
+    --heading3: #ca6702;
+    --accentyellow: #ee9b00;
+    --accenttan: #e9d8a6;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#nameTitle {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+}
+
+#banner {
+    width: 100%;
+}
+
+#title {
+    margin-top: -6%;
+    text-align: right;
+    font-family: 'Permanent Marker', cursive;
+    color: var(--heading);
+    font-size: 4rem;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#pagemarkers {
+    font-size: 2rem;
+    font-family: 'Fjalla One', sans-serif;
+    margin-right: 1vh;
+}
+
+#bodytext {
+    font-family: 'EB Garamond', serif;
+    color: black;
+    font-size: 1.25rem;
+}
