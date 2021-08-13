@@ -1,9 +1,10 @@
+import {
+    Link
+  } from "react-router-dom";
+
 const Nav = ({cat,dog}) => {
-
-    //console.log("******",props);
-
     return (
-        <div>
+        <div id="navcontainer">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     
@@ -16,19 +17,15 @@ const Nav = ({cat,dog}) => {
                     
                     <div className="collapse navbar-collapse" id="navbarColor01">
                         <ul className="navbar-nav me-auto">
+                            
+                            <Link className="nav-link active" to="/">About Me<span className="visually-hidden">(current)</span></Link>
+                            
+                            <Link className="nav-link" to="/portfolio">portfolio</Link>
+                            
+                            <Link className="nav-link" to="/resume">resume</Link>
+                            
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">Home
-                                    <span className="visually-hidden">(current)</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Resume</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
+                            <Link className="nav-link" to="/contact">contact</Link>
                             </li>
                         </ul>
                     </div>
